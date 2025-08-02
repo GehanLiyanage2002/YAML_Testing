@@ -1,0 +1,10 @@
+{
+    "school": {
+        "name": "Greenwood High School",
+        "location": "123 Elm Street, Springfield",
+        "established": 1995,
+        "principal": "Dr. Jane Smith",
+        "email": "jane.smith@greenwoodhigh.edu"
+        
+    }
+}

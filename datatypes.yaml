@@ -1,0 +1,52 @@
+#string
+name: Gehan Liyanage
+description: "A YAML file defining various data types for a project."
+version: '1.0'
+
+bio: |
+ my name is Gehan
+  Im a very nice.
+
+#write a single line in multiple lines
+
+message: >
+  This is a long message that
+  spans multiple lines but will
+  be rendered as a single line.
+
+#same as
+
+message: This is a long message that spans multiple lines but willbe rendered as a single line.
+
+number: 42
+marks: 99.5
+boolean: true #n, N, false, False, FALSE
+#same fro true -> yes, y ,Y
+
+#specify the type
+
+zero: !!int 0
+positiveNum: !!int 100
+negativeNum: !!int -100
+binaryNum: !!int 0b1010
+hexNum: !!int 0x1A
+floatNum: !!float 3.14
+nullValue: !!null null 
+#same as null -> ~, Null, NULL
+commaValue: !!int +540_000 #540,000
+
+#floating point numbers
+marks: !!float 99.5
+infinity: !!float .inf
+negativeInfinity: !!float -.inf
+not a num: .nan
+#same as float -> !!float 99.5, 99.5, 99.5e2, 99.5E2
+
+#null
+surename: !!null null
+#same as null -> ~, Null, NULL
+~: this is a null value
+
+#dates and times
+date:  !!timestamp 2023-10-01
+india time: !!timestamp 2023-10-01 10:30:00 +05:30

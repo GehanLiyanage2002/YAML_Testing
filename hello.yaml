@@ -1,0 +1,25 @@
+"apple" : "I am an apple"
+1: "this is rule one"
+---
+
+#lists
+
+- apple
+- banana
+- cherry
+
+---
+cities:
+  - "New York"
+  - "Los Angeles"
+  - "Chicago"
+---
+cities: [
+  "Houston",
+  "Phoenix",
+  "Philadelphia"
+]
+
+---
+
+{mango: "yellow fruit", age: 34}

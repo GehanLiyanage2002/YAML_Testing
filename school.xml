@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8">
+<school name='DPS' principal='someone'>
+    <students>
+        <student id='1'>
+        <name>John Doe</name>
+        <age>15</age>
+        <grade>A</grade>
+        </student>
+        <student id='2'>
+        <name>Jane Smith</name>
+        <age>14</age>
+        <grade>B</grade>
+        </student>
+    </students>
+    <teachers>
+        <teacher id='1'>
+        <name>Mr. Brown</name>
+        <subject>Mathematics</subject>
+        </teacher>
+        <teacher id='2'>
+        <name>Ms. Green</name>
+        <subject>Science</subject>
+        </teacher>
+    </teachers>
+</school>

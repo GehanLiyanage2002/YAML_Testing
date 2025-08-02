@@ -1,0 +1,77 @@
+student: !!seq
+ -marks
+ -name
+ -age
+
+ #like this also
+cities: [
+  "New York",
+  "Los Angeles",
+  "Chicago"
+ ]
+
+ #some of the keys of the sequence
+cities:
+  - "New York"
+  - "Los Angeles"
+  - "Chicago"
+
+#nested lists
+nestedList:
+  - fruits:
+      - apple
+      - banana
+    vegetables:
+      - carrot
+      - spinach
+
+# key: value pairs are called maps
+!!map 
+
+#nested mappings: map within an map
+nestedMap:
+  fruits:
+    apple: "red fruit"
+    banana: "yellow fruit"
+  vegetables:
+    carrot: "orange vegetable"
+    spinach: "green vegetable"
+
+#pairs: keys may have duplicate values
+# !!pairs
+pair example: !!pairs
+  - key1: value1
+  - key2: value2
+  - key3: value3
+
+#sets: unordered collection of unique items
+setExample: !!set
+  - apple
+  - banana
+  - cherry
+
+#ordered maps: maintain the order of key-value pairs
+orderedMapExample: !!omap
+  - key1: value1
+  - key2: value2
+  - key3: value3
+  
+#dictonary !!omap
+People: !!omap
+  - name: "Alice"
+    age: 30
+
+  - name: "Bob"
+    age: 25 
+
+#reusing some properties
+
+liking: &likes
+  fav fruit: mango
+  dislike: grapes
+
+person1:
+  name: "John"
+  <<: *likes
+  dislike: oranges
+ 
